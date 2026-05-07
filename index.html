@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FLAME | The Ritual of Grooming</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#e5e2e1",
+                    "surface-container-lowest": "#0e0e0e",
+                    "primary-fixed-dim": "#ffb77d",
+                    "secondary-fixed-dim": "#b8cbbe",
+                    "secondary-container": "#3a4b40",
+                    "tertiary-fixed": "#fbddca",
+                    "on-secondary-container": "#a7baad",
+                    "secondary": "#b8cbbe",
+                    "primary-container": "#d97707",
+                    "surface-container-low": "#1c1b1b",
+                    "background": "#131313",
+                    "tertiary-fixed-dim": "#dec1af",
+                    "surface-variant": "#353534",
+                    "on-tertiary": "#3f2c20",
+                    "outline": "#a38c7c",
+                    "inverse-on-surface": "#313030",
+                    "on-surface-variant": "#dbc2b0",
+                    "primary": "#ffb77d",
+                    "on-primary-fixed-variant": "#6e3900",
+                    "on-error-container": "#ffdad6",
+                    "error-container": "#93000a",
+                    "primary-fixed": "#ffdcc3",
+                    "on-tertiary-container": "#37261a",
+                    "on-secondary": "#24342b",
+                    "on-primary-container": "#432100",
+                    "tertiary": "#dec1af",
+                    "secondary-fixed": "#d4e7d9",
+                    "surface-bright": "#393939",
+                    "on-surface": "#e5e2e1",
+                    "surface-container-highest": "#353534",
+                    "surface-dim": "#131313",
+                    "on-tertiary-fixed": "#28180d",
+                    "on-error": "#690005",
+                    "inverse-primary": "#904d00",
+                    "on-primary-fixed": "#2f1500",
+                    "outline-variant": "#554336",
+                    "on-secondary-fixed": "#0f1f16",
+                    "on-tertiary-fixed-variant": "#574335",
+                    "surface-container-high": "#2a2a2a",
+                    "inverse-surface": "#e5e2e1",
+                    "error": "#ffb4ab",
+                    "on-primary": "#4d2600",
+                    "surface-tint": "#ffb77d",
+                    "surface": "#131313",
+                    "tertiary-container": "#a58c7c",
+                    "on-secondary-fixed-variant": "#3a4b40",
+                    "surface-container": "#201f1f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin": "32px",
+                    "lg": "48px",
+                    "xl": "80px",
+                    "md": "24px",
+                    "sm": "12px",
+                    "base": "8px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "display-lg": ["EB Garamond"],
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-sm": ["Hanken Grotesk"],
+                    "headline-md": ["EB Garamond"],
+                    "headline-lg": ["EB Garamond"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Hanken Grotesk', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-glow-amber {
+            text-shadow: 0 0 15px rgba(217, 119, 7, 0.3);
+        }
+        .card-inner-glow {
+            box-shadow: inset 0 0 0 1px rgba(255, 183, 125, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(19, 19, 19, 0.4) 0%, rgba(19, 19, 19, 1) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-background/90 dark:bg-background/90 backdrop-blur-md border-b border-outline-variant/30">
+<nav class="flex justify-between items-center w-full px-margin py-base max-w-[1200px] mx-auto">
+<div class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary tracking-tighter">
+                FLAME
+            </div>
+<div class="hidden md:flex gap-lg items-center">
+<a class="font-body-md text-body-md uppercase tracking-widest text-primary border-b border-primary pb-1" href="#">Services</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Gallery</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Testimonials</a>
+</div>
+<button class="bg-primary text-on-primary-fixed font-label-sm text-label-sm uppercase px-gutter py-xs tracking-widest hover:bg-primary-fixed-dim transition-all duration-300 active:scale-95">
+                Book Now
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A moody, high-end barbershop interior with dark green walls, polished wood, and warm amber vintage lighting. A leather barber chair sits center stage under a spotlight, creating a cinematic and premium atmosphere of a private grooming lounge. The style is meticulous and welcoming, reflecting a modern classic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVElSkQUUzSsPmCWCeYNYZLMlxNBt3JSJaMvN9lBD4QjDiZPg0ZjaJWBtF2KXflEhrE4VCCqnditI667fEpOCw8SBxpvfPcRjf-wf_MuGpW4OqCvX9-IGJwOVzmsVkM3a09JoTOgQ_z7pcAqcmr5N_0Ai5qDGqx0FDXoAk07k0W08V6TQ2TffXDreva4sndvzZLnBPtFH4tq6bBnz9m5_fqNXzEWo7WTm0CUqOnrf9E9k3fZzx-K5O5Lk7JjqXF4Dod7DufF0ugg"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center max-w-[800px] px-gutter">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-[0.3em] mb-sm block">Established 2024</span>
+<h1 class="font-display-lg text-[64px] md:text-[80px] leading-tight mb-lg text-glow-amber">
+                    The Ritual of Grooming
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-xl max-w-xl mx-auto">
+                    Meticulous precision for the discerning individual. Experience the heritage of traditional barbering elevated by contemporary precision.
+                </p>
+<div class="flex flex-col md:flex-row gap-md justify-center">
+<button class="bg-primary text-on-primary-fixed px-xl py-md font-label-sm text-label-sm uppercase tracking-widest hover:brightness-110 transition-all card-inner-glow">
+                        Book Your Chair
+                    </button>
+<button class="border border-primary/30 bg-secondary-container/20 text-primary px-xl py-md font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-container/40 transition-all backdrop-blur-sm">
+                        View Services
+                    </button>
+</div>
+</div>
+<div class="absolute bottom-base left-1/2 -translate-x-1/2 flex flex-col items-center gap-xs opacity-50">
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Scroll</span>
+<span class="material-symbols-outlined animate-bounce">arrow_downward</span>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-xl px-margin max-w-[1200px] mx-auto grid md:grid-cols-12 gap-xl items-center">
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover" data-alt="A close-up of a professional barber's tools laid out on a dark mahogany wooden surface. Silver shears, a straight razor with a brass handle, and a leather strop are illuminated by a warm, side-lit amber glow. The setting evokes a sense of craftsmanship and tradition, maintaining a premium and intentional visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9zIdKYv-g2m_ohFrcOSRh27WzRxIB5cK_sI8XKq9KOxQpVXBtRFVQDxlqYfdTdSyzUBWwK3yZbbjXR2lcfH2RqMBx2h14ES-84R8WlaNEPfaG1O-JXv-5nAmc4NT9E5--z4-lUg9ElrG6kzqqMr4WVOrJn-kVQJ4HQ0niwFODjYnBzYw6YOGLbC7MEP7uF-xqdeF3fviXnsjCKVoSa_loeYL1sZ9RISsWqXM74X0SG8HydcpG6jPfN6gFmGlLd6b2CP5T9LaLhQ"/>
+</div>
+<div class="absolute -bottom-base -right-base bg-primary-container p-gutter text-on-primary-container hidden md:block">
+<span class="font-display-lg text-headline-lg">15+</span>
+<p class="font-label-sm text-label-sm uppercase">Years of Craft</p>
+</div>
+</div>
+<div class="md:col-span-7 space-y-lg">
+<h2 class="font-display-lg text-display-lg text-primary">The Craft Behind The Flame</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    At Flame, we believe grooming is more than a chore—it's a private ritual. Inspired by the warm glow of a study lamp and the meticulous nature of a watchmaker, we've curated a space where precision meets comfort.
+                </p>
+<div class="grid grid-cols-2 gap-md border-t border-outline-variant/30 pt-lg">
+<div class="space-y-sm">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">content_cut</span>
+<h4 class="font-headline-md text-headline-md">Precision Cuts</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Tailored silhouettes that respect your unique features.</p>
+</div>
+<div class="space-y-sm">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">face</span>
+<h4 class="font-headline-md text-headline-md">Royal Treatment</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Hot towel shaves using artisanal balms and oils.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section (Bento Grid) -->
+<section class="bg-surface-container-low py-xl px-margin">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex justify-between items-end mb-xl">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-xs block">The Menu</span>
+<h2 class="font-display-lg text-display-lg">Curated Services</h2>
+</div>
+<a class="font-label-sm text-label-sm text-primary underline underline-offset-8 uppercase tracking-widest hover:text-primary-fixed-dim transition-colors" href="#">View All</a>
+</div>
+<div class="grid md:grid-cols-3 gap-md">
+<!-- Service 1 -->
+<div class="bg-secondary-container/20 p-xl border border-outline-variant/30 flex flex-col justify-between aspect-square hover:border-primary/50 transition-all group">
+<div class="space-y-md">
+<span class="font-label-sm text-label-sm text-primary uppercase">01</span>
+<h3 class="font-headline-lg text-headline-lg">Classic Cut</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Standard wash, precision cut, and styling using premium clay.</p>
+</div>
+<div class="flex justify-between items-end">
+<span class="font-headline-md text-headline-md text-primary">$45</span>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="bg-secondary-container/20 p-xl border border-outline-variant/30 flex flex-col justify-between aspect-square hover:border-primary/50 transition-all group relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 grayscale group-hover:grayscale-0 transition-all duration-700">
+<img class="w-full h-full object-cover" data-alt="A macro shot of a barber's hands performing a straight razor shave. Thick, white shaving cream is applied to a client's jawline, and the sharp steel of the razor glides with precision. The lighting is low-key and dramatic, emphasizing the textures of the cream and metal against a dark, moody background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwBq0axXCJw330JehX19K07RLBhwaJJhFSr0S3tYw8CddpMiEYHM3hv4rvBPTi3VkA2uE0AEp9_z7QK9CJdkwK8wIXNtKfFep6Az-0tkVCWaTozIkntRO7KHLLrfDMqkIVi6c6l07TDfzI9XEh1a2YsBtsPX-m9mxCKmkZnlr16DTOX3azjqpOuu-tLcq0vje7xdg7QOkM5CsvnjZfJM7T5PGFslyhmii7SpxrlhR-n5CbC5o8X8Hm_yAhP2vaOaU4dgQSZHjCYA"/>
+</div>
+<div class="relative z-10 space-y-md">
+<span class="font-label-sm text-label-sm text-primary uppercase">02</span>
+<h3 class="font-headline-lg text-headline-lg">Royal Shave</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Multi-step hot towel treatment with pre-shave oil and post-shave balm.</p>
+</div>
+<div class="relative z-10 flex justify-between items-end">
+<span class="font-headline-md text-headline-md text-primary">$55</span>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="bg-secondary-container/20 p-xl border border-outline-variant/30 flex flex-col justify-between aspect-square hover:border-primary/50 transition-all group">
+<div class="space-y-md">
+<span class="font-label-sm text-label-sm text-primary uppercase">03</span>
+<h3 class="font-headline-lg text-headline-lg">Beard Sculpting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Full beard trim, line-up, and hot oil beard treatment for softness.</p>
+</div>
+<div class="flex justify-between items-end">
+<span class="font-headline-md text-headline-md text-primary">$35</span>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section (Reference IMG_1 style) -->
+<section class="py-xl px-margin max-w-[1200px] mx-auto">
+<div class="text-center mb-xl">
+<h2 class="font-display-lg text-display-lg mb-sm">The Environment</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">A sanctuary for the modern gentleman. Every chair, every light, every scent is curated.</p>
+</div>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-md space-y-md">
+<div class="overflow-hidden rounded-lg">
+<img class="w-full hover:scale-105 transition-transform duration-700" data-alt="An atmospheric wide shot of a modern classic barbershop. Three leather barber chairs are spaced out along a dark wood counter. Warm, circular LED mirrors create halos of light on the dark green walls. The scene is quiet, premium, and sophisticated, reflecting a high-end grooming lounge aesthetic with amber accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmaVk2j8JXlUyerKCQHpBtipQX8dIGjmHDryl4ZwUEKtPEKmC7nVRoH_98EzTLLsVMQpkkpFuaO8a1vKH-cMlIQGnfBFFXMV1b81fh5pIUS6kl7jfGTzMXZ9Nble4U835cZVqtN2R-KcojPZ99EuiQGB0Tru5LGv90bzFe6aXt_64kF2l5EkfZMNTW6PPqlP-jcD1m9jy5CEm8ziJRr1p5SY6ClwZgkLsJzhm7TH3UoFRDQwS3fNzEw_Rfs6Xn58BHC2OH_baAew"/>
+</div>
+<div class="overflow-hidden rounded-lg">
+<img class="w-full hover:scale-105 transition-transform duration-700" data-alt="A portrait of a barber in a tailored dark vest and white shirt, meticulously cutting a client's hair. The focus is sharp on the scissors and the hair being cut, while the background of the dark shop is softly blurred. The lighting is warm and intentional, highlighting the focus and skill of the artisan." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbHVvoO0j6cMPkffPimjIzQ1TKlXECBjTrkcPbpYumAwr-hzd3QPpC6dJWAfH8HuryOWo6SGg6nZU4HYxaqbDjANm3QUZXTFR7fiZGlL1niJhTbQqrOIHry95HgtqVVG3NHSO9wlX4XkOCHBmHsbqG-pFY8i73TjMyByVbViCwQy9sNLILekVjclkQy3H2JNCyES8bhfwGAGa5rYMmlstNdm2U8OVXIKYcj-kV4eOBcR77bakIwjtHRUhWdbVyh-07TrFSWdZisQ"/>
+</div>
+<div class="overflow-hidden rounded-lg">
+<img class="w-full hover:scale-105 transition-transform duration-700" data-alt="A collection of high-end grooming products—amber glass bottles and matte black tins—arranged on a brass-lined shelf. The label 'FLAME' is visible in a gold-foil print. The surrounding environment is dark and moody, suggesting an exclusive, luxury brand identity for men's grooming rituals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEI49Pm2fPB6T6WsWrDlcLKjG_CmbrfQ_fHBbUJVfGPTvNG853kdx5YQGByFt_PU1JWCFEbY0poKKOkvH6KCW4czP6twKJeFv0nly-RUio65E01sO2lGJX04fcgA1BmtiB2Dek1cCKYIPzlwPVifp9gHhd_Q_JLJHO0cR-nw-vpnwVHeaDz8K0GDsdw8pCwUD7zpqm2XFAj_Pt590jloNX5MXGWijxfPHPUGeBHNB2P9JYPKnV9_NvSwzl-GQVR7J0HGD4Ve2YCA"/>
+</div>
+<div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="A close-up shot of a client's face being wrapped in a steaming hot white towel, a classic ritual of the barbering experience. Only the nose and mouth are visible. The towel's texture is soft and inviting, and the steam is visible in the warm, focused light of the shop. The mood is one of complete relaxation and luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjiTL_6h2NdR8TchJOpq28J0PJFfxBoTTJmiuiNzJ9-aZRmACZQP_3nCDhi57KnauFjQ2oX467YDbzf8ES_my4N4GDbAyXxtJwNgufAtgOCM0TvqEHJPEL39ZNo94fSTF_OvkSlU7mCQklynOyMrREy1n2rTI-jGcXxxwO43Xwv-YG2jjzXBbmO3oySWLuMSu6sxcQPY64xjYL3QsO-4v-u20jMxPP82WvpL_PTtbC03BBpAZnhTHSc-wUbfoGcBY9dqg5g35LCQ"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-primary-fixed bg-primary p-gutter">View Detail</span>
+</div>
+</div>
+<div class="overflow-hidden rounded-lg aspect-video">
+<img class="w-full h-full object-cover" data-alt="A minimalist, tactile shot of a barber's hands lathering a brush in a ceramic bowl. The soap is rich and creamy, and the brush is made of premium badger hair with a polished wood handle. The dark, charcoal background highlights the warmth of the scene, embodying the meticulous and welcoming personality of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACzChU5fmeWJk4dkhHvcQVhsgIje6e0-49MYL7TtMlFl_uZWPDz_nHcxaaIEdNdg0T10AS8xpjfX6BOCLcWmtP7mNhqFe_NNMUQWw5yrga53x_JstHerUjDMvqDTvoTANLR7J_W_LSX_I9dHqVNvMRG1Rpbs0JlKcSDguGi1eO7CqfKHLbNQZBlXDbZ88vn6JuKcx9ukfrLiXB9k5Tsu4ERVr476KwGkeTYSEVMbRvVJHsswFAcb9NSa-zyd46tnQ_PCn5yJsC0Q"/>
+</div>
+</
